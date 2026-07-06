@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Studio Momento — Wedding Photography">
+  <title>Studio Momento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Montserrat:wght@400;500&family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mainNav"><span></span><span></span></button>
+    <nav class="nav nav-left" id="mainNav" aria-label="주 메뉴">
+      <button type="button" data-page="portfolio">Portfolio</button>
+      <button type="button" data-page="about">About</button>
+      <button type="button" data-page="process">Process &amp; Pricing</buttton>
+    </nav>
+    <button class="rband" type="button" data-page="home" aria-label="Studio Momento 홈">
+      <img src="assets/logo-momento.svg" alt="Momento Studio">
+    </button>
+    <nav class="nav nav-right" aria-label="연락 메뉴">
+      <button type="button" data-page="contact">Contact</button>
+      <a href="https://www.instagram.com/studiomomento_official/" target="_blank" rel="noreferrer">Instagram</a>
+    </nav>
+  </header>
+
+  <main class="screen-shell">
+    <section class="screen home active" data-screen="home" aria-label="홈">
+      <div class="placeholder full-photo" data-number="01"><span>IMAGE 01</span></div>
+      <button class="featured-link" type="button" data-page="portfolio"><span>STUDIO MOMENTO</span><strong>View portfolio</strong></button>
+    </section>
+
+    <section class="screen portfolio" data-screen="portfolio" aria-label="포트폴리오">
+      <div class="screen-heading"><p>PORTFOLIO</p><h1>Selected stories</h1></div>
+      <div class="portfolio-list">
+        <button class="work" type="button" data-gallery="Editorial" data-start="02"><div class="placeholder" data-number="02"><span>IMAGE 02</span></div><p><strong>Editorial</strong><small>01 — 06</small></p></button>
+        <button class="work" type="button" data-gallery="Natural" data-start="08"><div class="placeholder" data-number="08"><span>IMAGE 8</span></div><p><strong>Natural</strong><small>07 — 12</small></p></button>
+        <button class="work" type="button" data-gallery="Timeless" data-start="14"><div class="placeholder" data-number="14"><span>IMAGE 14</span></div><p><strong>Timeless</strong><small>13 — 18</small></p></button>
+        <button class="work" type="button" data-gallery="Moment" data-start="20"><div class="placeholder" data-number="20"><span>IMAGE 20</span></div><p><strong>Moment</strong><small>19 — 24</small></p></button>
+      </div>
+    </section>
+
+    <section class="screen about" data-screen="about" aria-label="소개">
+      <div class="about-photo placeholder" data-number="26"><span>IMAGE 26</span></div>
+      <article class="about-copy">
+        <p class="eyebrow">ABOUT MOMENTO</p>
+        <h1>사랑이 시작되고<br>기억이 머무는 곳</h1>
+        <p>과한 연출보다 두 사람 사이의 분위기와 움직임을 바라봅니다. 시간이 지나 다시 펼쳤을 때도 그날의 공기까지 떠오르는 사진을 만듭니다.</p>
+        <p class="english">We keep the quiet, honest moments between two people.</p>
+      </article>
+    </section>
+
+    <section class="screen process" data-screen="process" aria-label="촬영 과정">
+      <div class="process-photo placeholder full-photo" data-number="27"><span>IMAGE 27</span></div>
+      <article class="process-panel">
+        <p class="eyebrow">PROCESS &amp; PRICING</p>
+        <h1>Simple, thoughtful<br>photography plans.</h1>
+        <ol>
+          <li><span>01</span><strong>Consultation</strong></li>
+          <li><span>02</span><strong>Planning</strong></li>
+          <li><span>03</span><strong>Shooting</strong></li>
+          <li><span>04</span><strong>Delivery</strong></li>
+        </ol>
+        <div class="pricing" aria-label="촬영 상품">
+          <article class="price-card">
+            <div><p>ESSENTIAL</p><strong>3 Hours</strong></div>
+            <span>PRICE TO BE UPDATED</span>
+            <ul><li>촬영 상세 내용 입력 예정</li><li>제공 항목 입력 예정</li><li>추가 안내 입력 예정</li></ul>
+          </article>
+          <article class="price-card featured">
+            <div><p>SIGNATURE</p><strong>5 Hours</strong></div>
+            <span>PRICE TO BE UPDATED</span>
+            <ul><li>촬영 상세 내용 입력 예정</li><li>제공 항목 입력 예정</li><li>추가 안내 입력 예정</li></ul>
+          </article>
+        </div>
+      </article>
+    </section>
+
+    <section class="screen contact" data-screen="contact" aria-label="문의">
+      <div class="contact-photo placeholder full-photo" data-number="28"><span>IMAGE 28</span></div>
+      <article class="contact-card">
+        <p class="eyebrow">CONTACT</p>
+        <h1>Let’s make<br>your momento.</h1>
+        <a href="mailto:1997gpark@gmail.com">1997gpark@gmail.com</a>
+        <a href="https://www.instagram.com/studiomomento_official/" target="_blank" rel="noreferrer">@studiomomento_official</a>
+      </article>
+    </section>
+  </main>
+
+  <section class="gallery" aria-hidden="true">
+    <header><button class="gallery-close" type="button">BACK</button><div><p>PORTFOLIO</p><h2 id="galleryTitle">Editorial</h2></div></header>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
